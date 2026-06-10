@@ -72,15 +72,24 @@ class MainActivity : AppCompatActivity() {
             //If there is no data/item entered, the button will not go to the next screen
             if(dynamicItems.isEmpty() || dynamicCategories.isEmpty() || dynamicComments.isEmpty() || dynamicQuantities.isEmpty()){
                 btnAdd.error="Please add an item"
+            }else {
+                // Counting the number of items entered
+               var total = 0
+
+                for (items in dynamicItems) {
+                    total +=  1
+                }
+
+                // Create an intent to send the list of arrays to the next activity to display
+                val intent = Intent(this, DetailsScreen::class.java)
+                intent.putStringArrayListExtra("items", ArrayList(dynamicItems))
+                intent.putStringArrayListExtra("categories", ArrayList(dynamicCategories))
+                intent.putStringArrayListExtra("comments", ArrayList(dynamicComments))
+                intent.putStringArrayListExtra("quantities", ArrayList(dynamicQuantities))
+                intent.putExtra("total", total)
+                startActivity(intent)
+                finish()
             }
-            // Create an intent to send the list of arrays to the next activity to display
-            val intent = Intent(this, DetailsScreen::class.java)
-            intent.putStringArrayListExtra("items", ArrayList(dynamicItems))
-            intent.putStringArrayListExtra("categories", ArrayList(dynamicCategories))
-            intent.putStringArrayListExtra("comments", ArrayList(dynamicComments))
-            intent.putStringArrayListExtra("quantities", ArrayList(dynamicQuantities))
-            startActivity(intent)
-            finish()
         }
     }
 }
