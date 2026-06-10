@@ -1,4 +1,5 @@
 # Campsite Comander
+<img src ="Loog/Campsite Commander.png" width="300">
 
 ## Table of Contents
 <ul>
@@ -20,6 +21,12 @@ This app is a equipment checker where it tracks, where the user can track and co
 </ul>
 
 ## Usage Example
+### How to use
+<ol>
+  <li>Enter your name and surname 
+    <img=""></li>
+</ol>
+### Code example
 
 ## Refrences
 <ul>
