@@ -60,7 +60,7 @@
         android:ems="10"
         android:hint="Item"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/spCatergory"
+        app:layout_constraintBottom_toTopOf="@+id/spCategory"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.385"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,17 +82,17 @@
         app:layout_constraintTop_toBottomOf="@+id/txtQuantity" />
 
     <Spinner
-        android:id="@+id/spCatergory"
+        android:id="@+id/spCategory"
         android:layout_width="109dp"
-        android:layout_height="0dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="48dp"
-        android:backgroundTint="@color/white"
-        android:dropDownWidth="match_parent"
-        android:entries="categories"
+        android:background="@color/white"
+        android:dropDownWidth="wrap_content"
+        android:entries="@array/categories"
         android:spinnerMode="dropdown"
         app:layout_constraintBottom_toTopOf="@+id/txtQuantity"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintHorizontal_bias="0.205"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtItem" />
 
@@ -109,7 +109,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.199"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spCatergory" />
+        app:layout_constraintTop_toBottomOf="@+id/spCategory" />
 
     <TextView
         android:id="@+id/tvTItems"

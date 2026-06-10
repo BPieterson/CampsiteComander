@@ -14,6 +14,7 @@
         <activity
             android:name=".LogoScreen"
             android:exported="true"
+            android:hardwareAccelerated="false"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,14 +25,17 @@
         <activity
             android:name=".MainActivity"
             android:exported="false"
+            android:hardwareAccelerated="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".DetailsScreen"
             android:exported="false"
+            android:hardwareAccelerated="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".UserScreen"
             android:exported="false"
+            android:hardwareAccelerated="false"
             android:windowSoftInputMode="adjustResize" />
     </application>
 

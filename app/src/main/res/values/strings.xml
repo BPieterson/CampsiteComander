@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Campsite Comander</string>
+    <string name="app_name">Campsite Commander</string>
 
     <string-array name="categories">
         <item>Shelter</item>

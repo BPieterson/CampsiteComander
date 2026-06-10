@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         txtQuantity = findViewById(R.id.txtQuantity)
         txtComment = findViewById(R.id.txtComment)
         tvTItems = findViewById(R.id.tvTItems)
-        spCategory = findViewById(R.id.spCatergory)
+        spCategory = findViewById(R.id.spCategory)
         btnAdd = findViewById(R.id.btnAdd)
         btnDetail = findViewById(R.id.btnDetail)
 

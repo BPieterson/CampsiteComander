@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 class LogoScreen : AppCompatActivity() {
     lateinit var imgLogo: ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -15,8 +16,9 @@ class LogoScreen : AppCompatActivity() {
         imgLogo = findViewById(R.id.imgLogo)
 
         val delayMillis = 3000
+
         imgLogo.postDelayed({
-            val intent = Intent(this, UserScreen::class.java)
+            val intent = Intent(this@LogoScreen, UserScreen::class.java)
             startActivity(intent)
             finish()
         }, delayMillis.toLong())
