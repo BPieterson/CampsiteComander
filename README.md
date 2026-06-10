@@ -12,6 +12,12 @@
 This app is a equipment checker where it tracks, where the user can track and count the amount of items they have ready for camping 
 
 ## Features
+<ul>
+  <li>Simple UI: It’s an easy and understandable UI.</li>
+  <li>Scenenic and themed UI desgin</li>
+  <li>Counter: This count the amount of items when add simitanously</li>
+  <li>Results: Able to see the list of items that's has been entered</li>
+</ul>
 
 ## Usage Example
 
