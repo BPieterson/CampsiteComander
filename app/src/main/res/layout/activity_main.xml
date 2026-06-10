@@ -48,13 +48,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.165"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtComment"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/txtItem"
         android:layout_width="250dp"
-        android:layout_height="0dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="38dp"
         android:background="@color/white"
         android:ems="10"
@@ -69,7 +71,7 @@
     <EditText
         android:id="@+id/txtComment"
         android:layout_width="250dp"
-        android:layout_height="0dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="174dp"
         android:background="@color/white"
         android:ems="10"
@@ -99,7 +101,7 @@
     <EditText
         android:id="@+id/txtQuantity"
         android:layout_width="100dp"
-        android:layout_height="0dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="48dp"
         android:background="@color/white"
         android:ems="10"
