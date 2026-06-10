@@ -17,6 +17,7 @@ class LogoScreen : AppCompatActivity() {
         val delayMillis = 3000
         imgLogo.postDelayed({
             val intent = Intent(this, UserScreen::class.java)
+            startActivity(intent)
             finish()
         }, delayMillis.toLong())
     }
