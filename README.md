@@ -9,6 +9,7 @@
 </ul>
 
 ## Discription
+This app is a equipment checker where it tracks, where the user can track and count the amount of items they have ready for camping 
 
 ## Features
 
