@@ -33,7 +33,7 @@ class UserScreen : AppCompatActivity() {
                     txtSurname.error = "Please enter a surname"
                 }
             }else {
-                val intent = Intent(this, DataScreen::class.java)
+                val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 finish()
             }
