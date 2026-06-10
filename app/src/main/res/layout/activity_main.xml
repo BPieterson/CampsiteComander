@@ -26,20 +26,76 @@
         android:id="@+id/btnDetail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/themeOrange"
         android:text="Details"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.878"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="640dp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:backgroundTint="@color/themeOrange"
+        android:text="Add"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.165"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="640dp" />
+
+    <EditText
+        android:id="@+id/txtItem"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Item"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <EditText
+        android:id="@+id/txtComment"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Comment"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="416dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="109dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:dropDownWidth="match_parent"
+        android:entries="categories"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <EditText
+        android:id="@+id/txtQuantity"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Quantity"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.199"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="318dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

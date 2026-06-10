@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Campsite Comander</string>
+
+    <string-array name="categories">
+        <item>Shelter</item>
+        <item>Food</item>
+        <item>Safety</item>
+        <item>Kitchen</item>
+    </string-array>
 </resources>

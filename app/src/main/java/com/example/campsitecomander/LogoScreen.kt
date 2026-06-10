@@ -5,8 +5,6 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class LogoScreen : AppCompatActivity() {
     lateinit var imgLogo: ImageView
@@ -16,10 +14,10 @@ class LogoScreen : AppCompatActivity() {
         setContentView(R.layout.activity_logo_screen)
         imgLogo = findViewById(R.id.imgLogo)
 
-        val delayMilliis = 3000
+        val delayMillis = 3000
         imgLogo.postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, UserScreen::class.java)
             finish()
-        }, delayMilliis.toLong())
+        }, delayMillis.toLong())
     }
 }
