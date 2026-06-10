@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CampsiteComander">
         <activity
-            android:name=".MainActivity"
+            android:name=".LogoScreen"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -22,11 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SplashScreen"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".LogoScreen"
+            android:name=".MainActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
@@ -35,6 +31,10 @@
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".DataScreen"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".UserScreen"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>
