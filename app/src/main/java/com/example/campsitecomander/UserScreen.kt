@@ -1,5 +1,6 @@
 package com.example.campsitecomander
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -19,5 +20,23 @@ class UserScreen : AppCompatActivity() {
         txtName = findViewById(R.id.txtName)
         txtSurname = findViewById(R.id.txtSurname)
         btnList = findViewById(R.id.btnList)
+
+        btnList.setOnClickListener {
+            val name = txtName.text.toString()
+            val surname = txtSurname.text.toString()
+
+            if(name.isEmpty() || surname.isEmpty()){
+                if(name.isEmpty()){
+                    txtName.error = "Please enter a name"
+                }
+                if(surname.isEmpty()){
+                    txtSurname.error = "Please enter a surname"
+                }
+            }else {
+                val intent = Intent(this, DataScreen::class.java)
+                startActivity(intent)
+                finish()
+            }
+        }
     }
 }
