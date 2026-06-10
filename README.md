@@ -21,13 +21,26 @@ This app is a equipment checker where it tracks, where the user can track and co
 </ul>
 
 ## Usage Example
+
 ### How to use
 <ol>
-  <li>Enter your name and surname 
-    <img=""></li>
+  <li>Enter your name and surname then click the button</li> 
+    <img src="Gui/Screenshot_20260610_144235.png" width="200">
+  <li>Enter your items</li>
+    <img src="Gui/Screenshot_20260610_142201.png" width="200">
+  <li>After you done entering you items click button to see your results</li>
+  
+  <img src="Gui/Screenshot_20260610_142201.png" width="200">
+  <img src="Gui/Screenshot_20260610_142212.png" width="200">
+  
+  <li>If erros appear enter the details</li>
+  <img src="Gui/Screenshot_20260610_142038.png" width="200">
 </ol>
-### Code example
 
+### Code example
+<ul>
+  <li></li>
+</ul>
 ## Refrences
 <ul>
   <li>Al-Adodi, 2026. Feux de camp | foret nuit, photographie de coucher de soleil, fond d’écran. [online] Pinterest. Available at: <https://za.pinterest.com/pin/351912466495548/> [Accessed 10 June 2026].</li>
