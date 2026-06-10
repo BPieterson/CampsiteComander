@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
@@ -14,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         lateinit var txtQuantity: EditText
         lateinit var txtComment: EditText
         lateinit var spCategory: Spinner
+        lateinit var tvTItems: TextView
         lateinit var btnAdd: Button
         lateinit var btnDetail: Button
 
@@ -31,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         txtItem = findViewById(R.id.txtItem)
         txtQuantity = findViewById(R.id.txtQuantity)
         txtComment = findViewById(R.id.txtComment)
+        tvTItems = findViewById(R.id.tvTItems)
         spCategory = findViewById(R.id.spCatergory)
         btnAdd = findViewById(R.id.btnAdd)
         btnDetail = findViewById(R.id.btnDetail)
@@ -59,6 +62,16 @@ class MainActivity : AppCompatActivity() {
                 dynamicComments.add(comment)
                 dynamicCategories.add(category)
 
+                // Counting the number of items entered
+                var totalItems = 0
+
+                for (i in dynamicItems) {
+                    totalItems +=  1
+                }
+
+                //Displaying the number of items entered
+                tvTItems.text = totalItems.toString()
+
                 // Clear the input fields after adding the item
                 txtItem.text.clear()
                 txtQuantity.text.clear()
@@ -74,10 +87,10 @@ class MainActivity : AppCompatActivity() {
                 btnAdd.error="Please add an item"
             }else {
                 // Counting the number of items entered
-               var total = 0
+               var totalItems = 0
 
-                for (items in dynamicItems) {
-                    total +=  1
+                for (i in dynamicItems) {
+                    totalItems +=  1
                 }
 
                 // Create an intent to send the list of arrays to the next activity to display
@@ -86,7 +99,7 @@ class MainActivity : AppCompatActivity() {
                 intent.putStringArrayListExtra("categories", ArrayList(dynamicCategories))
                 intent.putStringArrayListExtra("comments", ArrayList(dynamicComments))
                 intent.putStringArrayListExtra("quantities", ArrayList(dynamicQuantities))
-                intent.putExtra("total", total)
+                intent.putExtra("total", totalItems)
                 startActivity(intent)
                 finish()
             }

@@ -111,4 +111,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spCatergory" />
 
+    <TextView
+        android:id="@+id/tvTItems"
+        android:layout_width="95dp"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtComment" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
