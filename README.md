@@ -41,6 +41,7 @@ This app is a equipment checker where it tracks, where the user can track and co
 <ul>
   <li></li>
 </ul>
+
 ## Refrences
 <ul>
   <li>Al-Adodi, 2026. Feux de camp | foret nuit, photographie de coucher de soleil, fond d’écran. [online] Pinterest. Available at: <https://za.pinterest.com/pin/351912466495548/> [Accessed 10 June 2026].</li>
