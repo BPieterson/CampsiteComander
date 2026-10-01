@@ -7,6 +7,7 @@
   <li>Features</li>
   <li>Usage Examples</li>
   <li>Refreneces</li>
+  <li>Help</li>
 </ul>
 
 ## Discription
